@@ -1,0 +1,24 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "indent": [
+        "error",
+        2
+    ],
+    "linebreak-style": [
+        "error",
+        "unix"
+    ],
+    "quotes": [
+        "error",
+        "single"
+    ],
+    "semi": [
+        "error",
+        "never"
+    ],
+    "keyword-spacing": ["error", { "after": true }],
+    "space-before-blocks": ["error", "always"],
+    "space-before-function-paren": ["error", "never"]
+    }
+}
