@@ -1,5 +1,5 @@
 # Live Demo
-https://message-notification-system-erickm.vercel.app/
+https://message-notification-system-erickm.vercel.app
 
 # Descrição do projeto
 Projeto feito como forma de teste da Vibbra (https://vibbra.com.br/). Esse teste é de Fullstack.
