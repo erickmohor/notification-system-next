@@ -8,6 +8,7 @@ import { FileXls, FilePdf } from 'phosphor-react'
 
 import { api } from '@/services/api'
 import { pdfExport } from '@/utils/pdfExport'
+import { formatToCsvExport } from '@/utils/formatToCsvExport'
 
 import { Modal } from './components/Modal'
 import { Header } from './components/Header'
@@ -143,6 +144,8 @@ export default function MessagesHistory() {
     { label: 'Mensagem Visualizada', key: 'isSeen' },
     { label: 'Data', key: 'date' }
   ]
+
+  const csvBody = formatToCsvExport(messagesData)
  
   return (
     <>
@@ -158,7 +161,7 @@ export default function MessagesHistory() {
 
               <button>
                 <CSVLink 
-                  data={messagesData ? messagesData : []} 
+                  data={csvBody ? csvBody : []} 
                   headers={csvHeaders}
                   filename={'historico-de-mensagens.csv'}
                 >
