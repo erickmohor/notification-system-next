@@ -32,9 +32,11 @@ interface IMessage {
 }
 
 export function pdfExport(data: any) {
-  (<any>pdfMake).vfs = pdfFonts.pdfMake.vfs
+  pdfMake.vfs = pdfFonts.pdfMake.vfs
 
-  const content = data.map( (message: IMessage) => {
+  const messageData = JSON.parse(JSON.stringify(data))
+
+  const content = messageData.map( (message: IMessage) => {
     // Format message
     switch (message?.channel) {
     case 'sms':
@@ -66,7 +68,7 @@ export function pdfExport(data: any) {
       break
     }
 
-    message.date = format(new Date(message?.date), 'dd/MM/yyyy \'às\' H:m')
+    message.date = format(new Date(message?.date), 'dd/MM/yyyy \'às\' H:mm')
     //////////////////
 
 
