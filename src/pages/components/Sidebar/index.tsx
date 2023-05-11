@@ -18,7 +18,7 @@ interface IMenuItems {
 const menuItems: IMenuItems[] = [
   {
     name: 'Início',
-    link: '/home',
+    link: '/',
     icon: ArrowRight,
   },
   {
