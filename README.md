@@ -75,9 +75,9 @@ EMAIL
 
 
 # Tech Stack
-**Frontend:** Next, Typescript
-**Backend:** Node, Fastify, Typescript, Mongoose
-**Database:** MongoDB
+- **Frontend:** Next, Typescript
+- **Backend:** Node, Fastify, Typescript, Mongoose
+- **Database:** MongoDB
 
 
 # Dependências
@@ -86,12 +86,12 @@ React Hook Form, Nookies, Toastfy, Zod, Date-fns, Eslint, entre outros.
 
 # Variáveis de ambiente
 ## Frontend
-NEXT_PUBLIC_API_URL (URL do servidor backend)
+`NEXT_PUBLIC_API_URL` (URL do servidor backend)
 
 ## Backend
-NODE_ENV
-JWT_SECRET
-DATABASE_URL (URL do banco de dados MongoDB)
+`NODE_ENV`
+`JWT_SECRET`
+`DATABASE_URL` (URL do banco de dados MongoDB)
 
 # Para rodar localmente (frontend)
 Clone o diretório
