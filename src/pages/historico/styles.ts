@@ -133,4 +133,8 @@ export const ExportContainer = styled('div', {
   display: 'flex',
   marginBottom: '$1',
   gap: '$1',
+
+  button: {
+    cursor: 'pointer',
+  }
 })
