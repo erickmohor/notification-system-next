@@ -13,15 +13,17 @@ export const LoadingContainer = styled('div', {
 })
 
 export const ModalContainer = styled('div', {
+  position: 'absolute',
   top: 0,
   left: 0,
+
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  position: 'fixed',
+
   width: '100%',
-  height: '100vh',
-  zIndex: 2,
+  height: '90vh',
+  paddingTop: '$10',
 })
 
 export const HistoryContainer = styled('div', {

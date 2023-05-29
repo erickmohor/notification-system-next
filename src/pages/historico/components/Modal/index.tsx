@@ -2,7 +2,7 @@ import { format } from 'date-fns'
 
 import { IMessage } from '../../index.page'
 import { Button } from '@/pages/components/Button'
-import { InformationContainer, ModalContainer, SubTitle, Title } from './styles'
+import { ButtonContainer, InformationContainer, ModalContainer, SubTitle, Title } from './styles'
 
 
 type ModalProps = {
@@ -117,11 +117,13 @@ export function Modal({ data, showModal, closeModal }: ModalProps) {
         )
       }
 
-      <Button 
-        name='Fechar'
-        variant='secondary'
-        onClick={() => closeModal()}
-      />
+      <ButtonContainer>
+        <Button 
+          name='Fechar'
+          variant='secondary'
+          onClick={() => closeModal()}
+        />
+      </ButtonContainer>
     </ModalContainer>
   )
 
