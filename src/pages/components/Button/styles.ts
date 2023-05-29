@@ -3,6 +3,7 @@ import { styled } from '@/styles'
 export const Container = styled('button', {
   all: 'unset',
   minWidth: 120,
+  height: 46,
   boxSizing: 'border-box',
   display: 'flex',
   alignItems: 'center',
@@ -51,17 +52,8 @@ export const Container = styled('button', {
         }
       },
     },
-    size: {
-      sm: {
-        height: 38
-      },
-      md: {
-        height: 46
-      }
-    }
   },
   defaultVariants: {
     variant: 'primary',
-    size: 'md'
   }
 })
