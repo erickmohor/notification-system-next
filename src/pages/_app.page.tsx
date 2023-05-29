@@ -8,12 +8,16 @@ import 'react-datepicker/dist/react-datepicker.css'
 import { AuthProvider } from '@/contexts/AuthContext'
 
 import { globalStyles } from '@/styles/globals'
+import Head from 'next/head'
 
 globalStyles()
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <AuthProvider>
+      <Head>
+        <title>Sistema de Notificação</title>
+      </Head>
       <Component {...pageProps} />
       <ToastContainer 
         position="top-right"
